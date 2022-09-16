@@ -5,21 +5,6 @@ Create a new Jupyter notebook named mars_data_challenge_part_1.ipynb.
 
 Scrape the Mars News (Links to an external site.) website by using Splinter and Beautiful Soup. Specifically, scrape the title and preview text, or summary text, of each article on the landing page.
 
-If you’d like a hint on identifying which elements to scrape, that’s totally okay. If not, that’s great too. You can always revisit this later if you change your mind.
-
-HINT
-Store the scraping results in Python data structures as follows:
-
-Store each title-and-preview pair in a Python dictionary. And, give each dictionary two keys: title and preview. An example is the following:
-
-{'title': "Mars Rover Begins Mission!", 
-      'preview': "NASA's Mars Rover begins a multiyear mission to collect data about the little-explored planet."}
-Store all the dictionaries in a Python list.
-
-Print the list in your notebook.
-
-Optionally, store the scraped data in a file or database (to ease sharing the data with others). To do so, export the scraped data to either a JSON file or a MongoDB database.
-
 Deliverable 1 Requirements
 Automated browsing (with Splinter) was used to visit the Mars news site, and the HTML code was extracted (with Beautiful Soup). (10 points)
 
@@ -35,23 +20,6 @@ With your automated browser, visit the Mars Temperature Data (Links to an extern
 
 Scrape the data in the HTML table. To do so, choose one of two ways. The first, simpler way is to use Pandas's read_html method. The second, slightly more challenging way is to manually scrape the data by using Splinter and Beautiful Soup. We highly encourage you to choose the latter to reinforce your scraping skills.
 
-If you’d like a hint on manually scraping the data, that’s totally okay. If not, that’s great too. You can always revisit this later if you change your mind.
-
-HINT
-Assemble the scraped data into a Pandas DataFrame. The columns should have the same headings as the table on the website. Here’s an explanation of the column headings:
-
-The id heading: The identification number of a single transmission from the Curiosity rover.
-The terrestrial_date heading: The date on Earth.
-The sol heading: The number of elapsed sols (Martian days) since Curiosity landed on Mars.
-The ls heading: The solar longitude.
-The month heading: The Martian month.
-The min_temp heading: The minimum temperature, in Celsius, of a single Martian day (sol).
-The pressure heading: The atmospheric pressure at Curiosity's location.
-Examine the data types of all the DataFrame columns. If necessary, cast (or convert) the data to the appropriate datetime, int, or float data types.
-
-If you’d like a hint on how to convert the data, that’s totally okay. If not, that’s great too. You can always revisit this later if you change your mind.
-
-HINT
 Answer the following question: How many months exist on Mars?
 
 Answer the following question: How many Martian (and not Earth) days worth of data exist in the scraped dataset?
